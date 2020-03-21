@@ -5,8 +5,6 @@ jobs:
   build-and-test:
     docker:
       -image: circleci/node:9.9
-    executor:
-      name: node/default
     steps:
       - checkout
       - node/with-cache:
